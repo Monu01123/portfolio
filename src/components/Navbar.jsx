@@ -7,7 +7,7 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="flex justify-center">
+    <nav className="flex justify-center mb-5">
       <ul className="flex space-x-8 custom-dark-bg p-3 pt-2 w-min mt-8 rounded-xl">
         <li className="group relative text-white cursor-pointer">
           <HomeOutlinedIcon />
