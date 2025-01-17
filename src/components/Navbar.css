@@ -1,4 +1,32 @@
 .custom-dark-bg {
-    background-color: #1b1a1aa2; 
+  background-color: #1b1a1aa2;
+}
+
+.custommedia {
+  @media (max-width: 1028px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
-  
+}
+
+.customedia2 {
+  @media (max-width: 1028px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
