@@ -5,7 +5,7 @@ import FilePresentIcon from "@mui/icons-material/FilePresent";
 import BackupTableIcon from "@mui/icons-material/BackupTable";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import p1 from "./image.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -232,59 +232,147 @@ function Home() {
         </div>
 
         {/* 3rd section */}
-        <div className="mt-20 flex flex-col items-center sm:items-center md:items-center lg:items-start">
-          <h1 className="text-white text-6xl md:text-8xl font-bold">TOOLS &</h1>
-          <h1 className="text-neutral-700 text-6xl md:text-8xl font-bold">
+        <div className="mt-20 flex flex-col items-center lg:items-start">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-center lg:text-left">
+            TOOLS &
+          </h1>
+          <h1 className="text-neutral-700 text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-center lg:text-left">
             TECHNOLOGY
           </h1>
 
-          <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mt-10">
-            <div className="flex items-center space-x-4 w-72">
-              <div className="relative w-20 h-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+            {/* Card 1 */}
+            <div className="flex items-center space-x-4 w-full max-w-xs">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
                 <img
                   src={p1}
                   alt="Template Preview"
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover w-full h-full"
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white mb-0">NajmAI</h1>
-                <p className="text-sm text-gray-400 mb-5">
+                <h1 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  NajmAI
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-400">
                   SaaS Framer Template
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4 w-96">
-              <div className="relative w-20 h-20">
+            {/* Card 2 */}
+            <div className="flex items-center space-x-4 w-full max-w-xs">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
                 <img
                   src={p1}
                   alt="Template Preview"
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover w-full h-full"
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white mb-0">NajmAI</h1>
-                <p className="text-sm text-gray-400 mb-5">
+                <h1 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  NajmAI
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-400">
                   SaaS Framer Template
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4 w-96">
-              <div className="relative w-20 h-20">
+            {/* Card 3 */}
+            <div className="flex items-center space-x-4 w-full max-w-xs">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
                 <img
                   src={p1}
                   alt="Template Preview"
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover w-full h-full"
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white mb-0">NajmAI</h1>
-                <p className="text-sm text-gray-400 mb-5">
+                <h1 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  NajmAI
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-400">
                   SaaS Framer Template
                 </p>
               </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="flex items-center space-x-4 w-full max-w-xs">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
+                <img
+                  src={p1}
+                  alt="Template Preview"
+                  className="rounded-lg object-cover w-full h-full"
+                />
+              </div>
+              <div>
+                <h1 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  NajmAI
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-400">
+                  SaaS Framer Template
+                </p>
+              </div>
+            </div>
+
+            {/* Card 5 */}
+            <div className="flex items-center space-x-4 w-full max-w-xs">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
+                <img
+                  src={p1}
+                  alt="Template Preview"
+                  className="rounded-lg object-cover w-full h-full"
+                />
+              </div>
+              <div>
+                <h1 className="text-lg sm:text-xl font-bold text-white mb-1">
+                  NajmAI
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-400">
+                  SaaS Framer Template
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Education Section */}
+        <div className="mt-20 flex flex-col items-center lg:items-start">
+          <h1 className="text-white text-6xl md:text-8xl font-bold">
+            EDUCATION
+          </h1>
+          <h1 className="text-neutral-700 text-6xl md:text-8xl font-bold">
+            QUALIFICATIONS
+          </h1>
+          <div className="mt-10 space-y-6 w-5/6 lg:w-3/4">
+            {/* Master's Degree */}
+            <div className="bg-neutral-900 p-6 rounded-lg">
+              <h2 className="text-white text-2xl font-bold">
+                Master's in Computer Applications (MCA)
+              </h2>
+              <p className="text-gray-400 text-lg mt-2">
+                ABC University | 2021 - 2023
+              </p>
+              <p className="text-gray-500 text-base mt-2">
+                Specialized in software development, database management, and
+                web technologies.
+              </p>
+            </div>
+
+            {/* Bachelor's Degree */}
+            <div className="bg-neutral-900 p-6 rounded-lg">
+              <h2 className="text-white text-2xl font-bold">
+                Bachelor's in Computer Science
+              </h2>
+              <p className="text-gray-400 text-lg mt-2">
+                XYZ University | 2017 - 2020
+              </p>
+              <p className="text-gray-500 text-base mt-2">
+                Focused on foundational computer science principles, algorithms,
+                and data structures.
+              </p>
             </div>
           </div>
         </div>
@@ -296,7 +384,7 @@ function Home() {
           </h1>
 
           <section class="bg-black-900">
-            <div class="py-8 lg:p-16 px-4 w-[45rem]">
+            <div class="py-8 lg:p-16 px-4 md:w-[45rem] w-96">
               <form action="#" class="space-y-8 w-auto">
                 <div>
                   <label
