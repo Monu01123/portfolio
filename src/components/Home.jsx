@@ -36,7 +36,7 @@ function Home() {
             />
           </div>
           <h2 className="text-3xl font-bold mt-4">Monu Meena</h2>
-          <img
+          <image
             src={design}
             alt="SVG Image"
             width="200"
@@ -110,6 +110,7 @@ function Home() {
               href="https://chat-app-8i26.onrender.com/"
               className="w-5/6"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="mt-5 flex items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                 <div className="flex items-center space-x-4 w-96">
@@ -151,6 +152,7 @@ function Home() {
               href="https://chat-app-8i26.onrender.com/"
               className="w-5/6"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="mt-5 flex items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                 <div className="flex items-center space-x-4 w-96">
@@ -192,6 +194,7 @@ function Home() {
               href="https://chat-app-8i26.onrender.com/"
               className="w-5/6"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="mt-5 flex items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                 <div className="flex items-center space-x-4 w-96">
@@ -340,10 +343,10 @@ function Home() {
 
         {/* Education Section */}
         <div className="mt-20 flex flex-col items-center lg:items-start">
-          <h1 className="text-white text-6xl md:text-8xl font-bold">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-center lg:text-left">
             EDUCATION
           </h1>
-          <h1 className="text-neutral-700 text-6xl md:text-8xl font-bold">
+          <h1 className="text-neutral-700 text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-center lg:text-left">
             QUALIFICATIONS
           </h1>
           <div className="mt-10 space-y-6 w-5/6 lg:w-3/4">
@@ -373,6 +376,48 @@ function Home() {
                 Focused on foundational computer science principles, algorithms,
                 and data structures.
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="my-8 sm:flex justify-center sm:justify-start">
+          {/* LeetCode Section */}
+          <div className="text-center my-8">
+            <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-bold mb-4">
+              LEETCODE
+            </h1>
+            <img
+              src="https://leetcard.jacoblin.cool/AIMonu_?ext=contest"
+              alt="LeetCode Stats"
+              className="mx-auto border-2 border-gray-300 rounded-lg shadow-lg w-[310px] sm:w-3/4 md:w-3/4 "
+            />
+          </div>
+
+          {/* GitHub Stats Section */}
+          <div className="my-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 text-white">
+              GitHub Stats
+            </h2>
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=Monu01123&show_icons=true&theme=radical"
+                alt="GitHub Stats"
+                className="max-w-full sm:w-3/4 md:w-3/4 lg:w-3/4 rounded-lg shadow-md w-[330px] "
+              />
+            </div>
+
+            {/* GitHub Streak Section */}
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 text-white">
+                GitHub Streak
+              </h2>
+              <div className="flex justify-center">
+                <img
+                  src="https://github-readme-streak-stats.herokuapp.com/?user=Monu01123&theme=radical"
+                  alt="GitHub Streak"
+                  className="max-w-full sm:w-3/4 md:w-3/4 lg:w-3/4 rounded-lg shadow-md w-[330px] "
+                />
+              </div>
             </div>
           </div>
         </div>
