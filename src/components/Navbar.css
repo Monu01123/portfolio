@@ -30,3 +30,40 @@
   scrollbar-width: none; /* Firefox */
 }
 
+body {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  mix-blend-mode: difference;
+  transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease,
+    opacity 0.3s ease;
+}
+
+.cursor.active {
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.text-hover-effect {
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+.text-hover-effect:hover {
+  color: black;
+}
+
+.element:hover {
+  cursor: none;
+}
