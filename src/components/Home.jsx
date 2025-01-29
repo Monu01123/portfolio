@@ -1,5 +1,5 @@
-import photo from "./profile.jpg";
-import design from "./bott.svg";
+import photo from "./photo.jpg";
+// import design from "./bott.svg";
 import "./Navbar.css";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import BackupTableIcon from "@mui/icons-material/BackupTable";
@@ -13,10 +13,10 @@ import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import BorderColorOutlinedIcon from "@mui/icons-material/BorderColorOutlined";
 import ConnectWithoutContactOutlinedIcon from "@mui/icons-material/ConnectWithoutContactOutlined";
-import "./Navbar.css";
 import emailjs from "emailjs-com";
-// import { Link } from "react-scroll";
-// import sk1 from "./sk1.png";
+import { FileText } from "lucide-react";
+// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+// import linkdin from "./linkedin.png";
 
 function Home() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -167,21 +167,63 @@ function Home() {
               <img
                 src={photo}
                 alt="Profile"
-                className="w-full h-full object-cover transition-transform duration-500"
+                className="w-full h-full object-contain transition-transform duration-500"
                 loading="lazy"
               />
             </div>
             <h2 className="text-3xl font-bold mt-4">Monu Meena</h2>
-            <image
-              src={design}
-              alt="SVG Image"
-              width="200"
-              height="200"
-              style={{ clipPath: "inset(0 0 0 50%)" }}
-              className="absolute top-96 -left-24 transform transition-transform duration-500 scale-110"
-              loading="lazy"
-            />
-            <p className="text-m text-gray-500 mt-20">
+            <ul className="flex justify-center space-x-4 mt-4">
+              <li>
+                <a
+                  href="mailto:monumeena0112@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAABCFBMVEX////lOTVMr1AeiOXGKCj7wC2gx/IAgOOv2LA8qkEAeOLk8uToXVrqZ0PCHyD9yCrlNTHkMTQwpzby+f5DrEd8ru2cz577vBPjo6PkKybCCQn+4KX97+/++vrqbWv519btgH7EFRX+893jGxTmQz/2zMzreHbxo6MAjO49rlHnTEn1xMPrwMDfk5P+8NT94az82pX+6cHKQ0P8xUn/+vDOTU3ZgID81H324OD8yVnUbW3PVVX2wK7qXzXzsK6twea2L0PovCS+2q6ZXonQHQDDvUeCbaakuUpOgdC6QFHpwTx7tVOhWX6auVBefcbcvjyrUG12crDioY7D2/bU6tSPvfBdoeqJx4unjuxaAAADZUlEQVR4nO3ZaXOTQBjA8d2E2ksR2/RYCkmQHCTpfWhrbW21qdpYa63V7/9NXCASWBaasGQZZ57/S0mY3/CwpKwIQRAEQRAEQRAEQRAEQRAEQdD/krG5vrW1XhM/0fbO7u7G3qH4iZCxpVhu6v6m2In2Dta8ZnaFWcdHuuKn6m9MgRO9XZsZtnbwWtBkqUqQfpR5htsHgcllCanMU0sJpVoZR7gTJlHUicgE13Ulmv4uwwgPT6ImqtoQQCmqwqpOjyc9SXR0w7KbjtkL5d3vvYkulvmeQxK5qzY5KEXtVidQmdWzlzzUXmZU7JbyUM+J1hv3DE1MXnBR2W+qBJSmaefjneBc017JQmFsV42nv25UbYwlojDpPvkgrXUJlovCmt1Ovd/Ntu19TiqKXqxWispsEf9TklGYNJpJ32w2hibpKJy4Cumqw0Wh6I3V4qxCo2WPPpI76sOFlY7irkJ/1aWjLj9mRj2b/XQV+0mOorBG2tEvtUnkOBfVr8wJoJxrhb1YDIqq6qERGvWoiYv6XJoXQZWdL1/1dJS7CoMR1hqEORhH3Qw6gijaN0tNR2END0fYxrFjMVS/RBNGMSPkoOgqdEdo1O34IRZ128kF5Y7QSkd5I4yPLo66G3imHFDuCEerkI+iD1KN++8RlDe63FDOfTDCBFRSIdSlP7rcUGXn+4UuiLoZBKacUN4qFEL1R6QcUeVr78bKiLotlaaC8ldhJtTdoDMlFO3HVSZUv8SUK8q5V63JUbedqaLoKtzvToY6Y0eXP6rsOG3+U5Kfpv2cj5FyR5UXlmuE93vCjZDa4pIUlPvLO57JrptIFoq+1JExRui/GkpDsX+I80fn//kuEeVuFKReLO3fdoNMVOwNgTEF7xNyUe7mU+LocPDyLBnlvnXyTeF3VNmohFVIRxfa+pCOCu9kjEYX3fcoAEVXIaMizCZfESi6CsPPBvrAZA4Xg0LN0YOUdGNbVgWh/B1Xb9Vx9meLQiHz3F2F0VVXOAqhXoOQBnfPv0AUMqsJ/ztSJAqZCXvFhaKSAhSgAAUoQAGK38PCtFBLvzKj0NSuVCW7CT1yVHmgBKaH0PLvuCoH1PwfARNVrZRno2VAVZhKq0Im2sPjCtOEqMNVprlFURMEQRAEQRAEQRAEQRAEQRAESeov8oR9mqxpYYIAAAAASUVORK5CYII="
+                    alt=""
+                    width="30"
+                    height="10"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/Monu01123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GitHubIcon />
+                </a>
+              </li>
+
+              <li className="flex justify-center">
+                <a
+                  href="https://www.linkedin.com/in/monu-meena/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    width="30"
+                    height="10"
+                    src="data:image/png;base64,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"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <div className="flex justify-center items-center mt-6">
+              <a
+                href={`${process.env.PUBLIC_URL}/Monu_Meena_Resume.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white px-4 py-2 rounded-2xl hover:bg-green-600 shadow-md flex items-center gap-2"
+              >
+                <FileText /> View Resume
+              </a>
+            </div>
+            <p className="text-m text-gray-500 mt-10">
               A Software Engineer who has developed countless innovative
               solutions.
             </p>
@@ -280,8 +322,7 @@ function Home() {
               PROJECTS
             </h1>
             <div className=" mt-5 flex flex-col items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500">
-              <div className="mt-5 flex items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-                <div className="flex items-center space-x-4 w-96">
+            <div className="mt-5 flex items-center justify-center sm:justify-start w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">                <div className="flex items-center space-x-4 w-96">
                   <div className="relative w-32 h-20">
                     <img
                       src={chat}
@@ -291,7 +332,7 @@ function Home() {
                     />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-white">
+                    <h1 className="text-base font-bold text-white sm:text-2xl">
                       Chat Application
                     </h1>
                     <p className="text-sm text-gray-400">
@@ -338,8 +379,7 @@ function Home() {
                 </a>
               </div>
 
-              <div className="mt-5 flex items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-                <div className="flex items-center space-x-4 w-96">
+              <div className="mt-5 flex items-center justify-center sm:justify-start w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">                <div className="flex items-center space-x-4 w-96">
                   <div className="relative w-32 h-20">
                     <img
                       src={p1}
@@ -349,7 +389,7 @@ function Home() {
                     />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-white">
+                    <h1 className="text-base font-bold text-white sm:text-2xl">
                       E-learning platform
                     </h1>
                     <p className="text-sm text-gray-400">
@@ -394,7 +434,7 @@ function Home() {
                 </a>
               </div>
 
-              <div className="mt-5 flex items-center justify-between w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="mt-5 flex items-center justify-center sm:justify-start w-5/6 bg-black p-6 rounded-lg cursor-pointer hover:bg-neutral-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                 <div className="flex items-center space-x-4 w-96">
                   <div className="relative w-32 h-20">
                     <img
@@ -405,10 +445,10 @@ function Home() {
                     />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-white">
+                    <h1 className="text-base font-bold text-white sm:text-2xl">
                       E-Commerce Platform
                     </h1>
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm text-gray-400 ">
                       <span className="font-medium"></span> React &nbsp;|&nbsp;
                       <span className="font-medium"></span> Node.js, Express
                       &nbsp;|&nbsp;

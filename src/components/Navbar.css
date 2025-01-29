@@ -67,3 +67,7 @@ body {
 .element:hover {
   cursor: none;
 }
+
+* {
+  scroll-behavior: smooth;
+}
