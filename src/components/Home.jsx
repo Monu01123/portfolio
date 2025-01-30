@@ -235,10 +235,10 @@ function Home() {
           className="custommedia col-span-6 flex-col bg-black mt-6 py-6 transition-all duration-500 lg:h-screen lg:overflow-y-scroll lg:hide-scrollbar"
         >
           <div className="customedia2 px-4 md:px-0">
-            <h1 className="text-white text-6xl md:text-8xl font-bold">
+            <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-bold">
               FULL STACK
             </h1>
-            <h1 className="text-neutral-700 text-6xl md:text-8xl font-bold">
+            <h1 className="text-neutral-700 text-3xl sm:text-6xl md:text-8xl font-bold">
               DEVELOPER
             </h1>
             <p className="text-neutral-500 text-base sm:text-lg md:text-xl mt-2 font-semibold w-11/12 sm:w-96 lg:w-96">
@@ -755,10 +755,10 @@ function Home() {
             className="mt-20 flex flex-col items-center sm:items-center md:items-center lg:items-start"
             id="contact"
           >
-            <h1 className="text-white text-6xl md:text-8xl font-bold">
+            <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-bold">
               CONTACT
             </h1>
-            <h1 className="text-neutral-700 text-6xl md:text-8xl font-bold">
+            <h1 className="text-neutral-700 text-4xl sm:text-6xl md:text-8xl font-bold">
               ME
             </h1>
 
