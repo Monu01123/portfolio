@@ -1,3 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-primary text-white-100 font-sans antialiased overflow-x-hidden selection:bg-creative-orange selection:text-white;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(90deg, #FF5500 0%, #FF8800 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .warm-hero-gradient {
+        background: linear-gradient(135deg, #FF5500 0%, #CC2200 100%);
+    }
+
+    .violet-gradient {
+        background: linear-gradient(180deg, rgba(255, 85, 0, 0) 0%, #CC2200 100%);
+    }
+
+    .bubble {
+        position: absolute;
+        bottom: -100px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        animation: float 20s infinite linear;
+        z-index: 1;
+        /* Behind content but readable */
+        pointer-events: none;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .glass-nav {
+        background: rgba(5, 8, 22, 0.7);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Fade mask for marquee */
+    .mask-linear-fade {
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF5500;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF8800;
+}

@@ -22,12 +22,15 @@
 
 /* Hide scrollbar but allow scrolling */
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+  display: none;
+  /* Hide scrollbar for Chrome, Safari, and Edge */
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 body {
@@ -47,6 +50,16 @@ body {
   mix-blend-mode: difference;
   transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease,
     opacity 0.3s ease;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
 }
 
 .cursor.active {
