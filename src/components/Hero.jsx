@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
 import HeroImage from "./gh.png";
 
 const Hero = () => {
